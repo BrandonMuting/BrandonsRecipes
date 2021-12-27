@@ -99,7 +99,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<tw-storydata name="Brandon&#39;s Recipes" startnode="1" creator="Twine" creator-version="2.3.14" ifid="7A5D7429-FC1D-4BC8-9C74-732C19DE6BE3" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
-  	font-size: 40px;
+  	font-size: 20px;
 	background-image: url("Resources/Background.png");
   	background-size: cover
 }
@@ -109,38 +109,39 @@ a {
 a:hover, a:focus {
 	filter: brightness(1.4);
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
-$(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1" name="Main Menu" tags="menu" position="200,0" size="100,100">&lt;h2&gt; Brandon&#39;s Recipes &lt;/h2&gt;\
-&lt;h3&gt;[[Dishes|Menu Dishes]]
+$(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1" name="Main Menu" tags="menu" position="200,0" size="100,100">&lt;h4&gt; Brandon&#39;s Recipes &lt;/h4&gt;\
+&lt;h5&gt;[[Dishes|Menu Dishes]]
 [[Sides|Menu Sides]]
-[[Desserts|Menu Desserts]]&lt;/h3&gt;</tw-passagedata><tw-passagedata pid="2" name="Menu Dishes" tags="" position="0,201" size="100,100">Brandon&#39;s Dishes - [[Return To Menu|Main Menu]]
+[[Desserts|Menu Desserts]]&lt;/h5&gt;</tw-passagedata><tw-passagedata pid="2" name="Menu Dishes" tags="" position="0,201" size="100,100">Brandon&#39;s Dishes - [[Return To Menu|Main Menu]]
 &lt;&lt;set $list to Story.lookup(&quot;tags&quot;, &quot;dish&quot;)&gt;&gt;\
 &lt;&lt;for $i to 0; $i lt $list.length; $i++&gt;&gt;
-	&lt;&lt;set $title to $list[$i].title&gt;&gt;
+	&lt;&lt;set $title to $list[$i].title&gt;&gt;\
 	[[$title]]
 &lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Menu Sides" tags="" position="200,200" size="100,100">Brandon&#39;s Side Dishes - [[Return To Menu|Main Menu]]
 &lt;&lt;set $list to Story.lookup(&quot;tags&quot;, &quot;side&quot;)&gt;&gt;\
 &lt;&lt;for $i to 0; $i lt $list.length; $i++&gt;&gt;
-	&lt;&lt;set $title to $list[$i].title&gt;&gt;
+	&lt;&lt;set $title to $list[$i].title&gt;&gt;\
 	[[$title]]
 &lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Menu Desserts" tags="" position="400,201" size="100,100">Brandon&#39;s Desserts - [[Return To Menu|Main Menu]]
 &lt;&lt;set $list to Story.lookup(&quot;tags&quot;, &quot;dessert&quot;)&gt;&gt;\
 &lt;&lt;for $i to 0; $i lt $list.length; $i++&gt;&gt;
-	&lt;&lt;set $title to $list[$i].title&gt;&gt;
+	&lt;&lt;set $title to $list[$i].title&gt;&gt;\
 	[[$title]]
-&lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Banana Pancake" tags="dish" position="0,399.5" size="100,100">&lt;h2&gt;Banana Pancake&lt;/h2&gt;\
+&lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Banana Pancake" tags="dish" position="0,399" size="100,100">&lt;h4&gt;Banana Pancake&lt;/h4&gt;\
 &#39;&#39;INFORMATION&#39;&#39;
-prep time:
-cook time:
-servings:
-carbs:
+cook/prep: 10 mins
+servings: 1
+carbs: 30
 
 &#39;&#39;INGREDIENTS&#39;&#39;
-1 banana
+1/2 banana
 2 eggs
 cinnamon
 
 &#39;&#39;INSTRUCTIONS&#39;&#39;
-mash banana
+mash the banana
+add eggs and stir
+fry until brown
 
 [[RETURN TO MENU|Main Menu]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
