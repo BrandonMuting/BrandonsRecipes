@@ -13,26 +13,28 @@
   }
 body {
     color: var(--5);
-    background: #f4e5c2;
+    background: url("images/background.png");
+    background-size: 30%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 120%;
     font-weight: 400;
     padding-top: 70px;
 }
 a {
-  color: var(--4);
+    color: var(--4);
 }
 a:hover, a:focus {
-  color: var(--3);
+    color: var(--3);
 }
 ul {
     list-style: circle outside;
 }
 ul.guide {
     list-style: square outside;
-    font-weight: 500;
+    font-weight: 600;
 }
 h3{
+    color: #000000;
     padding: 0px 0px 15px 0px;
 }
 .gapless{
@@ -69,8 +71,8 @@ h3{
     border: var(--5);
 }
 img.food {
-    height: 105%;
-    width: 105%;
+    height: 100%;
+    width: 100%;
     margin: 10px auto 10px auto;
     border-width:5px;
     border-color:var(--5);
@@ -101,4 +103,10 @@ img.food {
 }
 .col {
     flex: 0 0 20%;
+}
+@media only screen and (min-width: 1025px) {
+    img.food {
+        width: 110%;
+        height: 100%;
+    }
 }
