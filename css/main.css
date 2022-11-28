@@ -275,6 +275,7 @@ Navbar
 .nav-logo {
   display: flex;
   align-items: flex-end;
+  width: auto;
 }
 
 .nav-btn {
